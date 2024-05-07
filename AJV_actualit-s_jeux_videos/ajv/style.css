@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/background-image.png);
+    background-repeat: no-repeat;
+    background-size: 101%;
+    background-attachment: fixed;
+    background-position: center -2px;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 51%;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.jeu_img{
+    width: 283px;
+    height: 385px;
+  }
+
+.jeu_nom {
+    word-wrap : break-word;
+
+    color: #000;
+}
+
+.jeu_prix {
+    text-align: center;
+    font-size: 35px;
+    color: #000;
+} 
+
+
+.btn{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
