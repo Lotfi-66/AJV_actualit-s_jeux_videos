@@ -2,8 +2,8 @@
 
 Tout d’abord, afin de pouvoir dockeriser votre application PHP, créez un fichier docker-compose.yml avec le contenu suivant :
 
-version : '3'
 
+version : '3'
 
 services:
 
