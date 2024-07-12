@@ -3,23 +3,19 @@
 Tout d’abord, afin de pouvoir dockeriser votre application PHP, créez un fichier docker-compose.yml avec le contenu suivant :
 
 
-version : '3'
+version: '3.8'
 
 services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
 
-    php:
-    
-        build: .
-        
-        volumes: 
-        
-             - ./:/var/www/html
-             
-             - /var/log/apache2/app:/var/log/apache2/
-             
-        ports:
-        
-             - 8080:80
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
              
 Ce fichier permettra de lancer le déploiement de votre application PHP dans un container Docker.
 
