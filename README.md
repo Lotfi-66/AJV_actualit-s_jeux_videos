@@ -19,7 +19,9 @@ services:
              
 Ce fichier permettra de lancer le déploiement de votre application PHP dans un container Docker.
 
+
 Etape 2 : créer un fichier Dockerfile
+
 Ensuite, toujours à la racine de votre application PHP, créez un fichier Dockerfile avec le contenu suivant :
 
 FROM php:8.2-apache
